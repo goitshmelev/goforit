@@ -1,0 +1,70 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #eeeeee;
+	border-bottom: 5px #000 solid;
+	font-family: 'Times New Roman';
+}
+
+h1 {
+    font-size: 20pt;
+}
+
+p, a {
+	margin-left: 15px;
+	font-size: 14pt;
+}
+
+ul {
+	margin-top: 30px;
+    line-height: 35px;
+	font-size: 14pt;
+}
+
+.main {
+	width: 512px;
+	margin: 0 auto;
+	margin-top: 4px;
+	margin-bottom: 47px;
+	padding: 54px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 5px 1px rgba(176,176,176,1);
+	-moz-box-shadow: 0 0 5px 1px rgba(176,176,176,1);
+	box-shadow: 0 0 5px 1px rgba(176,176,176,1);
+}
+
+.div_center {
+    text-align: center;
+}
+
+.first,
+.about,
+.contacts {
+	border-bottom: 1px #7a7a7a solid;
+}
+
+.contacts {
+	padding-bottom: 25px;
+}
+
+.about,
+.contacts,
+.feedback,
+.my_facebook {
+	margin-top: 35px;
+}
+
+.my_contact,
+.my_facebook,
+.my_feedback {
+	margin-bottom: 0;
+}
+
+.my_phone,
+.text_feedback {
+	margin-top: 10px;
+}
+
+.my_facebook {
+	margin-bottom: 10px;
+}

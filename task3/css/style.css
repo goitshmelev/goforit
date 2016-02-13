@@ -1,0 +1,160 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+html {
+ height: 100%;
+}
+
+body {
+ height: 100%;
+ font-family: 'Open Sans', sans-serif;
+ font-weight: normal;
+ background-color: #f9f9f9;
+}
+
+.container {
+ width: 960px;
+ min-height: 100%;
+ margin: 0 auto;
+ padding: 0 50px 0 50px;
+ position: relative;
+ background-color: #fff;
+ -webkit-box-shadow: 0px 0px 5px 4px rgba(219,219,219,1);
+ -moz-box-shadow: 0px 0px 5px 4px rgba(219,219,219,1);
+ box-shadow: 0px 0px 5px 4px rgba(219,219,219,1);
+}
+
+header {
+ padding-top: 50px;
+}
+
+header nav {
+ height: 40px;
+ margin-top: 40px;
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5e5e5e+0,454444+100 */
+ background: #5e5e5e; /* Old browsers */
+ background: -moz-linear-gradient(top,  #5e5e5e 0%, #454444 100%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(top,  #5e5e5e 0%,#454444 100%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(to bottom,  #5e5e5e 0%,#454444 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e5e5e', endColorstr='#454444',GradientType=0 ); /* IE6-9 */
+}
+
+header nav a {
+ display: inline-block;
+ padding: 0 25px 0 25px;
+ font-size: 11pt;
+ line-height: 40px;
+ list-style-type: none;
+ text-shadow: #000 1px 1px 0;
+ color: #ebebeb;
+ text-decoration: none;
+}
+
+header nav a:hover, header nav a:active {
+ border-right: 1px #838383 solid;
+ border-left: 1px #838383 solid;
+ background-color: #464646;
+ padding: 0 24px 0 24px;
+}
+
+main {
+ margin-top: 40px;
+ position: absolute;
+}
+
+.left_menu {
+ width: 240px;
+ float: left;
+}
+
+.left_menu li {
+ line-height: 38px;
+ padding-left: 25px;
+ border-top: 1px #c8c8c8 solid;
+ border-right: 1px #c8c8c8 solid;
+ border-left: 1px #c8c8c8 solid;
+ list-style-type: none;
+}
+
+.left_menu li:last-child {
+ line-height: 38px;
+ border: 1px #c8c8c8 solid;
+ list-style-type: none;
+}
+
+.left_menu li:hover {
+ padding-left: 37px;
+ background-color: #f9f9f9;
+}
+
+.left_menu a {
+ font-family: sans-serif;
+ font-weight: normal;
+ font-size: 10pt;
+ color: #656363;
+ text-decoration: none;
+}
+
+.left_menu li:hover a{
+ color: #000;
+}
+
+.content {
+ width: 676px;
+ float: left;
+ margin-left: 45px;
+}
+
+.content_img {
+ text-align: center;
+ border: 1px #c8c8c8 solid;
+}
+
+.content_img img {
+ max-height: 380px;
+}
+
+.content_text {
+ margin-top: 40px;
+}
+
+.content_text p {
+ font-size : 10pt;
+ color: #2c2c2c;
+ margin-left: 25px;
+}
+
+footer {
+ position: absolute;
+ width: 966px;
+ bottom: 30px;
+ background-color: #e1e1e1;
+ font-size: 10pt;
+ line-height: 40px;
+ list-style-type: none;
+}
+
+footer nav {
+ height: 40px;
+ float: left;
+}
+
+footer nav a {
+ display: inline-block;
+ padding: 0 25px 0 25px;
+ font-size: 10pt;
+ color: #000;
+ text-decoration: none;
+}
+
+footer nav a:hover, header nav a:active {
+ text-decoration: underline;
+}
+
+.copy {
+ width: 525px;
+ float: left;
+ text-align: right;
+}

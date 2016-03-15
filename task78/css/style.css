@@ -27,7 +27,7 @@
 
 .toper header {
     display: block;
-    max-width: 960px;
+    max-width: 965px;
     margin: 0 auto;
     padding-top: 69px;
 }
@@ -35,7 +35,6 @@
 .menu {
     width: auto;
     float: right;
-    margin-right: -11.5%;
 }
 
 .menu__item,
@@ -808,7 +807,7 @@ footer {
 @media  (min-width: 961px)  {
     .wrapper {
         display: table;
-        width: 960px;
+        width: 930px;
         margin: 0 auto;
     }
     .some_text {
@@ -1141,6 +1140,12 @@ footer {
     }
 }
 
+@media screen and (min-width: 460px) and (max-width: 600px) {
+    .figure {
+        overflow: hidden;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .menu {
         float: left;
@@ -1191,8 +1196,11 @@ footer {
     .description__item {
         display: none;
     }
-}
 
+    .footer {
+        overflow: hidden;
+    }
+}
 
 @media screen and (max-width: 480px) {
     .figure {
@@ -1221,7 +1229,7 @@ footer {
 
     .description__item3 {
         float: none;
-        width: 353px;
+        width: 90%;
     }
 
     .menu--footer {
@@ -1248,7 +1256,7 @@ footer {
         width: 246px;
         position: absolute;
         top: 130px;
-        left:111px;
+        left:90px;
         background-color: rgba(54, 41, 62, 0.6);
         border-radius: 10px;
         box-sizing: border-box;
@@ -1359,5 +1367,49 @@ footer {
 
     .description {
         display: none;
+    }
+
+    header .menu:hover {
+        float: none;
+        height: 257px;
+        width: 246px;
+        position: absolute;
+        top: 130px;
+        left:50px;
+        background-color: rgba(54, 41, 62, 0.6);
+        border-radius: 10px;
+        box-sizing: border-box;
+        border: 1px solid #121c23;
+        z-index: 5;
+    }
+
+    header .menu__item:hover {
+        margin: 0 auto;
+        float: none;
+        display: block;
+        border-bottom: 2px solid #523f5a;
+        height: 30px;
+        padding-top: 10px;
+        font-size: 24px;
+    }
+
+    header .menu__item:hover {
+        background-color: rgba(54, 41, 62, 0.8);
+        border-bottom: 2px solid #edbfff;
+    }
+
+    header .menu__item:last-child {
+        border: none;
+    }
+
+    header .menu__item:last-child:hover{
+        background-color: rgba(54, 41, 62, 0.8);
+        border-bottom: none;
+    }
+
+    header .menu__link:hover {
+        float: none;
+        text-align: center;
+        padding: 0;
     }
 }

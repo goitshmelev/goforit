@@ -8,8 +8,12 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
   <link href="http://allfont.ru/allfont.css?fonts=open-sans-light" rel="stylesheet" type="text/css" />
+  <!--[if IE 8]>
+  <link href="css/styleIE8.css" rel="stylesheet" type="text/css" />
+  <![endif]-->
  </head>
  <body>
+ <div class="header--main"> <!-- for IE8-->
   <section class="toper">
    <header>
     <div class="header">
@@ -50,7 +54,8 @@
      </nav>
     </div>
    </header>
-   <figure class="figure">
+   <div class="figure--main"> <!-- for IE8 -->
+    <figure class="figure">
     <div class="figure__wrapper">
      <div class="figure__text">
       <h1>Lorem Ipsum Dolor</h1>
@@ -84,8 +89,10 @@
      </ul>
     </div>
    </figure>
+   </div>
   </section>
-
+</div>
+ <div class="section--main"> <!-- for IE8-->
   <section class="articles">
     <div class="wrapper">
      <div class="articles__item">
@@ -100,7 +107,7 @@
       <p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pel- lentesque vel lacus eget nisi convallis auctor. Nam</p>
       <a href="">READ MORE</a>
      </div>
-     <div class="articles__item">
+     <div class="articles__item aitemie">
       <span class="articles__icon3"> </span>
       <h2>ABOUT OUR COMPANY</h2>
       <p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pel- lentesque vel lacus eget nisi convallis auctor. Nam</p>
@@ -108,7 +115,9 @@
      </div>
     </div>
   </section>
+  </div>
 
+ <div class="main--main"> <!-- for IE8-->
   <section class="some_text">
     <div class="wrapper">
      <div class="some_text-slider">
@@ -189,7 +198,8 @@
      </div>
 
     <div class="description">
-     <div class="wrapper">
+     <div class="article--main"> <!--for IE8-->
+      <div class="wrapper">
       <div class="description__item">
        <div class="description__logo">
         <a class="link" href="#" > </a>
@@ -220,8 +230,11 @@
       <div class="clear"> </div>
      </div>
     </div>
+   </div>
   </section>
+</div>
 
+ <div class="footer--main"> <!-- for IE8-->
   <section class="footer">
    <footer>
      <ul class="menu menu--footer">
@@ -251,5 +264,6 @@
      </div>
    </footer>
  </section>
+ </div>
  </body>
 </html>

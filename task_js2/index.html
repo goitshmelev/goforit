@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>Home work JS #2</title>
+</head>
+<script>
+    function ArrayNames(countNames) {
+        var arrayNames = [];
+
+        for (var i=0; i < countNames; i++) {
+            var name = prompt('Введите случайные имена', '');
+            arrayNames.push(name) ;
+        }
+
+        return arrayNames;
+    }
+
+    function findName(name, data) {
+        for (var i=0; i < data.length; i++) {
+            if (name === data[i]) {
+                return true;
+            }
+        }
+        return false;
+    }
+</script>
+<body>
+ <script>
+     var arrayOfNames = ArrayNames(5);
+     var yourName = prompt('Введите свое имя', '');
+
+     if (findName(yourName, arrayOfNames)) {
+         alert(yourName + ', вы успешно вошли');
+     } else {
+         alert('Не верно введено имя');
+     }
+ </script>
+</body>
+</html>

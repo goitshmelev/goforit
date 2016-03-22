@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>Home work JS #1</title>
+</head>
+<script>
+    function pow (number, exponent) {
+        if (exponent <=0 && number == 0) {
+            return NaN;
+        }
+
+        if (exponent == 0 && number != 0) {
+            return 1;
+        }
+
+        var edit_exponent = Math.abs(exponent);
+        var result = 1;
+
+        for (var i = 0; i < edit_exponent; i++) {
+            result *= number;
+        }
+
+        if (exponent > 0) {
+            return result;
+        }
+
+        return 1 / result;
+    }
+</script>
+<body>
+ <script>
+     var input_number = prompt('Введите число', 0);
+     var input_exponent = prompt('Введите степень', 0);
+     console.log(pow(input_number,input_exponent));
+ </script>
+</body>
+</html>

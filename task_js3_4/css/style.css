@@ -1,0 +1,42 @@
+body {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #000;
+    margin-top: 50px;
+}
+
+.wrapper {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 2px 2px 8px 0px rgba(150,150,150,1);
+}
+
+.wrapper--header {
+    text-align: center;
+    font-size: 30px;
+}
+
+.questions {
+    margin: 10px;
+}
+
+.questions--header {
+    font-size: 18px;
+}
+
+.questions--label {
+    display: block;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.questions--label input {
+    position: absolute;
+    margin-left: -15px;
+    margin-top: 2px;
+}
+
+.wrapper--button {
+    margin: 20px 0 0 150px;
+}

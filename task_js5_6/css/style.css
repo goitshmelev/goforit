@@ -1,0 +1,40 @@
+body {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #000;
+    margin-top: 50px;
+}
+
+.wrapper {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 2px 2px 8px 0px rgba(150,150,150,1);
+    text-align: center;
+    font-size: 30px;
+}
+
+.clock {
+    border: 0;
+    display: block;
+    margin-left: 125px;
+    background-color: #fff;
+    font-size: 40px;
+    width: 220px;
+}
+
+.btns {
+    margin-left: 125px;
+    margin-bottom: 30px;
+}
+
+#start, #stop, #reset, #split {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+#stop {
+    display: none;
+}

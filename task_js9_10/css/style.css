@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Arvo Bold'), local('Arvo-Bold'), url(http://fonts.gstatic.com/s/arvo/v9/Ya11CJGBCnKoJHvb8B2EOw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F0EFE7;
+}
+
+h1 {
+    font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #4E443C;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.custom_selectboxes {
+    margin: 0 auto;
+    width: 220px;
+    padding-bottom: 70px;
+}
+
+.clear {
+    clear: both;
+}
+
+.jquery-checkbox,
+.css-checkbox {
+    width: 400px;
+    margin: 50px auto;
+
+}
+
+form {
+    background: #99CCFF;
+    padding: 10px;
+}
+
+.newCheck {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    background: url('../img/checkbox.png');
+    overflow: hidden;
+}
+
+.newChecked {
+    background-position: 0 -17px;
+}
+
+.newCheck input {
+    margin-left: -100px; /* можно задать побольше чтобы наверняка скрыть поле */
+}
+
+.newCheckDisabled {
+    background-image: url('../img/checkbox-disabled.png');
+}
+
+.hideThis {
+    display: none;
+}
+
+.input-css input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.input-css label {
+    cursor: pointer;
+}
+
+.input-css label:after {
+    content: ' ';
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url('../img/css-checkbox.png');
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+}
+
+.input-css input[type=checkbox]:checked + label:after {
+    background-position: 0 -17px;
+}
+.input-css label:hover:after {
+    background-position: 0 -34px;
+}
+.input-css input[type=checkbox]:checked + label:hover:after {
+    background-position: 0 -51px;
+}
+
+.menu{
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    background-color:rgb(255,100,100);
+    padding:10px 0;
+}
+
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+nav ul li {
+    display:inline-block;
+    position:relative;
+}
+
+nav li ul {
+    position:absolute;
+    left:0;
+    top:40px;
+    width:200px;
+    z-index: 999;
+}
+
+.sub-menu{
+    background-color: #E14B4B;
+}
+
+nav li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+
+nav li li ul {
+    position:absolute;
+    top:0;
+    left:200px;
+    margin:0;
+    z-index: 999;
+}
+
+nav a {
+    line-height:40px;
+    padding:0 12px;
+    margin:0 12px;
+}
+
+nav a {
+    color:#fff;
+    text-decoration:none;
+    display:block;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color:rgb(50,50,50);
+}
+
+nav li li a {
+    border-bottom:solid 1px rgb(200,50,50);
+    margin:0 10px;
+    padding:0;
+}
+
+nav li li:last-child a {
+    border-bottom:none;
+}
+
+ul.sub-menu {
+    display:none;
+}
+
+nav li.dropdown > a {
+    background-image:url('../img/arrow-down.png');
+    background-position:right 20px;
+    background-repeat:no-repeat;
+}
+
+nav li li.dropdown > a {
+    background-image:url('../img/arrow-right.png');
+    background-position:right 16px;
+    background-repeat:no-repeat;
+}

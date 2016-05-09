@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home work JS #11-12</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/script_slider.js"></script>
+    <script src="js/jsmicrotemplate.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>1. First task</h1>
+    <div class="wrapper">
+        <div class="carousel-arrow-left"><span>Влево</span></div>
+        <div class="carousel-hider">
+            <ul class="carousel-list">
+                <li class="carousel-element"><img src="img/img1.jpg"><p>Описание 1</p></li>
+                <li class="carousel-element"><img src="img/img2.jpg"><p>Описание 2</p></li>
+                <li class="carousel-element"><img src="img/img3.jpg"><p>Описание 3</p></li>
+                <li class="carousel-element"><img src="img/img4.jpg"><p>Описание 4</p></li>
+                <li class="carousel-element"><img src="img/img5.jpg"><p>Описание 5</p></li>
+                <li class="carousel-element"><img src="img/img1.jpg"><p>Описание 6</p></li>
+                <li class="carousel-element"><img src="img/img2.jpg"><p>Описание 7</p></li>
+                <li class="carousel-element"><img src="img/img3.jpg"><p>Описание 8</p></li>
+                <li class="carousel-element"><img src="img/img4.jpg"><p>Описание 9</p></li>
+                <li class="carousel-element"><img src="img/img5.jpg"><p>Описание 10</p></li>
+            </ul>
+        </div>
+        <div class="carousel-arrow-right"><span>Вправо</span></div>
+    </div>
+
+    <div class="clear"> </div>
+
+    <script type="text/template" id="second_task_tmpl">
+        <div class="first_task">
+            <h1>1. Second task</h1>
+            <div class="main">
+                <div class="first">
+                    <div class="div_center">
+                        <h1><#= name #></h1>
+                        <img src="<#= photo #>" alt="Тут должно быть моё фото">
+                    </div>
+                    <p><#= about #></p>
+                </div>
+
+                <div class="about">
+                    <p>Хочу учить фронтенд потому что:</p>
+                    <ul>
+                        <li><#= reason1 #></li>
+                        <li><#= reason2 #></li>
+                        <li><#= reason3 #></li>
+                    </ul>
+                </div>
+
+                <div class="contacts">
+                    <p class="my_contact">Мой контактный телефон</p>
+                    <p class="my_phone"><#= mobile #></p>
+                    <p class="my_facebook">Мой профиль в фейсбуке</p>
+                    <a href="<#= link #>"><#= link #></a>
+                </div>
+
+                <div class="feedback">
+                    <p class="my_feedback">Мой фидбек</p>
+                    <p class="text_feedback"><#= feedback #></p>
+                </div>
+            </div>
+        </div>
+    </script>
+
+</body>
+</html>

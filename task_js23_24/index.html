@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home work JS #23-24</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jsmicrotmpl.js"></script>
+    <script data-main="js/main_script.js" src="js/require.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/script.js"></script>-->
+</head>
+<body>
+
+<script type="text/template" id="templating">
+    <div class="templating__wrapper">
+        <header class="templating__header">
+            <h1 class="templating__header-h1">To Do List</h1>
+            <input type="text" class="templating__header-input"  placeholder="Enter your task and press enter" maxlength="40"/>
+        </header>
+        <ul class="templating__ul"> </ul>
+    </div>
+</script>
+
+<script type="text/template" id="templating__records">
+    <%for (var i=0; i<data.length; i++) {%>
+      <li id="<%= i %>" class="records__item">
+        <div class="records__item-wrap">
+            <span data-value="<%= data[i] %>" class="records__item-delete">
+                <button class="records__item-btn">X</button>
+            </span>
+            <label id="<%= i %>"class="records__item-label" for="<%= i %>"><%= data[i] %></label>
+            <input id="<%= i %>" class="records__item-edit" type="text" maxlength="40"/>
+        </div>
+      </li>
+    <% } %>
+</script>
+</body>
+</html>
